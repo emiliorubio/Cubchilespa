@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar{
+  margin-left: 15px;
+  width: 96%;
+  height: 60px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: rgba(90, 88, 88, 0.795);
+  box-shadow: 0 5px 10px rgb(12, 12, 12);
+  z-index: 2;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+  
+.logoCarrito {
+  max-width: 40px;
+  max-height: 40px;
+
+}
+
+.titulo {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.paginas {
+  text-align: right;
+  font-size: 16px;
+  padding: 0px 40px;
+}
+
+
+.carousel-item img { 
+  width: 100%;
+  height: auto;
+
+} 
+
+.roundedname{
+  text-decoration: none;
+  color: white;
+}
+
+.rounded {
+  max-width: 500px;
+  max-height: 500px;
+  gap: 4rem;
+}
+
+.item-image {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 80%);
+}
+
+
+.columna {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.aboutus{
+  background: none;
+  text-align: center;
+  color: white;
+}
+.paragraph{
+  text-align: center;
+  color: white;
+}
+
+.item-title {
+  color: white;
+}
+.item-price {
+  color: white;
+}
+.buscador{
+  color: white;
+}
+
+
+
+@media screen and (max-width: 770px) {
+  .paginas {
+    text-align: center;
+  }
+}
