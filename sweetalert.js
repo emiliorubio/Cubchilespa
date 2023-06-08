@@ -1,48 +1,24 @@
 (async() => {
-    const {value: responder}  = await Swal.fire({
-	title:"Bienvenido!",
-	text: 'eres mayor de edad?',
-	icon: 'question',
-	confirmButtonText: 'Seleccionar',
-	footer: 'No vendemos alcohol a menores de edad',
-	width: '70%',
+    await Swal.fire({
+	title:"Bienvenidos a Cub Chile!",
+	text: '¡Donde cumpliras tus sueños!',
+	imageUrl: '/imagenes/Logo-CubChile.jpg',
+	imageWidth: 100,
+    imageHeight: 100,
+	confirmButtonText: 'Siguenos',
+	footer: 'Todos nuestros trabajos cuentan con garantia 30 dias.',
+	width: '40%',
 	padding:'2rem',
 	backdrop: true,
 	allowOutsideClick: false,
-	allowEscapeKey:false,
-	allowEnterKey:false,
-	stopKeydownPropagation:false,
+	allowEscapeKey:true,
+	allowEnterKey:true,
+	stopKeydownPropagation:true,
+	timer: 3000,
+	timerProgressBar:true,
 
-	input: 'select',
-	inputPlaceholder: 'responder',
-	inputValue:'',
-	inputOptions: {
-        Si: 'Si',
-        No: 'No'
-    }
-    });
+	
 
-
-if (responder === 'Si') {
-    Swal.fire({
-        title: `${responder} puedes comprar`,
-		icon:'success',
-        timer: 3000,
-	    timerProgressBar:true,
-    })
-} else {
-    swal.fire({
-    title:`No puedes comprar`,
-	icon: 'error',
-    showConfirmButton: false,
-    allowOutsideClick: false,
-	allowEscapeKey:false,
-	allowEnterKey:false,
-    })
-    setTimeout(()=>{
-        document.location.reload()
-    },4000)
-}
-
-
+	});
+	
 })() 
