@@ -38,10 +38,44 @@ body {
   color: white;
 }
   
-.logoCarrito {
-  max-width: 40px;
-  max-height: 40px;
 
+
+.ov-btn-slide-left {
+  margin-right: 80px;
+  background: gold; /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 1px solid #4741d7; /* tamaño y color de borde */
+  padding: 6px 10px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-left:hover {
+  color: #fff; /* color de fuente hover */
+}
+.ov-btn-slide-left::after {
+  content: "";
+  background: #4741d7; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .titulo {
