@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/09/18/16/49/building-2762342_1280.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .navbar{
+    margin-left: 15px;
+    width: 96%;
+    height: 60px;
+    max-width: 1530px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: rgba(90, 88, 88, 0.795);
+    box-shadow: 0 5px 10px rgb(12, 12, 12);
+    z-index: 2;
+  }
+  
+  .navbar-nav {
+    gap: 20px;
+  }
+  
+  
+  .navbar a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .title-presupuesto{
+    padding-top: 100px;
+  }
+
+  .container02{
+    background: none;
+    padding: 50px 0px;
+  }
+  
+  .container02 img{
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgb(0 0 0 / 80%);
+  }
+  .container02 h6{
+    padding-top: 15px;
+  }
+    
