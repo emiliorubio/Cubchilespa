@@ -31,7 +31,9 @@ if (responder === 'Tabiques') {
 		icon:'info',
         timer: 5000,
 	    timerProgressBar:true,
-    })
+    }).then(function() {
+		window.location = "/secciones/tabiquesyCielos.html";
+	});
 }
 if (responder === 'Electricidad') {
     Swal.fire({
@@ -39,7 +41,9 @@ if (responder === 'Electricidad') {
 		icon:'info',
         timer: 5000,
 	    timerProgressBar:true,
-    })
+    }).then(function() {
+		window.location = "/secciones/electricidad.html";
+	});
 } 
 if (responder === 'Gasfiteria') {
     swal.fire({
@@ -47,7 +51,9 @@ if (responder === 'Gasfiteria') {
 	icon: 'info',
 	timer: 5000,
 	timerProgressBar:true,
-	})
+	}).then(function() {
+		window.location = "/secciones/gasfiteria.html";
+	});
 }
 if (responder === 'Pintura') {
     swal.fire({
@@ -55,7 +61,9 @@ if (responder === 'Pintura') {
 	icon: 'info',
 	timer: 5000,
 	timerProgressBar:true,
-	})
+	}).then(function() {
+		window.location = "/secciones/pintura.html";
+	});
 }
 
 
